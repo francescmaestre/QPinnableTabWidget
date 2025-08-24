@@ -1,9 +1,7 @@
 file(GLOB SRC_FILES
-  *.cpp
-  *.h
-  *.ui
+    include/*.h
+    src/*.cpp
 )
-
 
 add_library(QPinnableTabWidget STATIC
     ${SRC_FILES}
@@ -14,4 +12,5 @@ target_link_libraries(QPinnableTabWidget
     Qt::Core
     Qt::Widgets
 )
-target_include_directories(QPinnableTabWidget PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_include_directories(QPinnableTabWidget PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
