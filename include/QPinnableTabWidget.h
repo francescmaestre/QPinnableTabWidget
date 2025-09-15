@@ -43,6 +43,9 @@ public:
    int insertTab(int index, QWidget *widget, const QString &s);
    int insertTab(int index, QWidget *widget, const QIcon &icon, const QString &label);
 
+   void changeTabName(QWidget *widget, const QString &s);
+   void changeTabName(int index, const QString &s);
+
    void removeTab(int index);
 
    bool tabsClosable() const { return QTabWidget::tabsClosable(); }

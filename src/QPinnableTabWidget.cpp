@@ -135,6 +135,17 @@ int QPinnableTabWidget::insertTab(int index, QWidget *widget, const QIcon &icon,
    return QTabWidget::insertTab(index, widget, icon, label);
 }
 
+void QPinnableTabWidget::changeTabName(QWidget *widget, const QString &s)
+{
+   auto index = QTabWidget::indexOf(widget);
+   QTabWidget::setTabText(index, s);
+}
+
+void QPinnableTabWidget::changeTabName(int index, const QString &s)
+{
+   QTabWidget::setTabText(index, s);
+}
+
 void QPinnableTabWidget::removeTab(int index)
 {
    QTabWidget::removeTab(index);
@@ -257,7 +268,7 @@ void QPinnableTabWidget::unpinTab()
 
    tabBar()->moveTab(mClickedTab, mLastPinTab);
 
-   connect(closeBtn, &RealCloseButton::clicked, this, [this]() { emit tabBar()->tabCloseRequested(mLastPinTab); });
+   connect(closeBtn, &RealCloseButton::clicked, this, [this]() { emit tabBar() -> tabCloseRequested(mLastPinTab); });
 
    mClickedTab = -1;
 }
