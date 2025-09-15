@@ -1,6 +1,7 @@
 file(GLOB SRC_FILES
     include/*.h
     src/*.cpp
+    src/*.h
 )
 
 add_library(QPinnableTabWidget STATIC
