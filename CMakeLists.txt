@@ -1,5 +1,6 @@
 file(GLOB SRC_FILES
     include/*.h
+    include/QPinnableTabWidget
     src/*.cpp
     src/*.h
 )
