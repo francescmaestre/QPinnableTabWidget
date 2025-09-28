@@ -27,10 +27,10 @@
 
 class FakeCloseButton : public QAbstractButton
 {
-   Q_OBJECT
+    Q_OBJECT
 
 public:
-   explicit FakeCloseButton(QWidget *parent = 0);
+    explicit FakeCloseButton(QWidget* parent = 0);
 
-   void paintEvent(QPaintEvent *) override { }
+    void paintEvent(QPaintEvent*) override { }
 };

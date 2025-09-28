@@ -27,14 +27,14 @@
 
 class RealCloseButton : public QAbstractButton
 {
-   Q_OBJECT
+    Q_OBJECT
 
 public:
-   explicit RealCloseButton(QWidget *parent = 0);
+    explicit RealCloseButton(QWidget* parent = 0);
 
-   QSize sizeHint() const override;
-   QSize minimumSizeHint() const override { return sizeHint(); }
-   void enterEvent(QEnterEvent *event) override;
-   void leaveEvent(QEvent *event) override;
-   void paintEvent(QPaintEvent *event) override;
+    QSize sizeHint() const override;
+    QSize minimumSizeHint() const override { return sizeHint(); }
+    void enterEvent(QEnterEvent* event) override;
+    void leaveEvent(QEvent* event) override;
+    void paintEvent(QPaintEvent* event) override;
 };
