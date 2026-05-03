@@ -1,4 +1,4 @@
-#include "FakeCloseButton.h"
+#include <FakeCloseButton.h>
 
 FakeCloseButton::FakeCloseButton(QWidget* parent)
     : QAbstractButton(parent)

@@ -1,4 +1,4 @@
-#include "RealCloseButton.h"
+#include <RealCloseButton.h>
 
 #include <QPainter>
 #include <QStyleOption>

@@ -1,7 +1,7 @@
-#include "QPinnableTabWidget.h"
+#include <QPinnableTabWidget.h>
 
-#include "FakeCloseButton.h"
-#include "RealCloseButton.h"
+#include <FakeCloseButton.h>
+#include <RealCloseButton.h>
 
 #include <QMenu>
 #include <QMouseEvent>

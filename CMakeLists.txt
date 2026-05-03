@@ -15,4 +15,5 @@ target_link_libraries(QPinnableTabWidget
     Qt::Widgets
 )
 
-target_include_directories(QPinnableTabWidget PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(QPinnableTabWidget SYSTEM PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(QPinnableTabWidget SYSTEM PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
